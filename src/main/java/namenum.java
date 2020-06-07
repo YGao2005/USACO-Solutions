@@ -14,8 +14,9 @@ public class namenum {
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("namenum.out")));
         int cowNum = Integer.parseInt(f.readLine());
         ArrayList<String> dictionary = new ArrayList<>();
-        for(int i = 0; i < 4617; i++){
-            dictionary.add(d.readLine());
+        String dictionaryWord;
+        while ((dictionaryWord = d.readLine()) != null) {
+            dictionary.add(dictionaryWord);
         }
         HashMap<Integer, String> numMap = new HashMap<>();
         numMap.put(2, "ABC");
